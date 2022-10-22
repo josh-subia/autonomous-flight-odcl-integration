@@ -1,3 +1,5 @@
+#This file is able to get waypoint data through user input and store it in an array
+#Work that still has to be done is to officially upload these waypoint data to Mission Planner
 #create empty latitude list
 lat = [];
 #create empty longitude list
