@@ -37,7 +37,7 @@ wp9 = Locationwp().Set(38.3145917, -76.5451776, 26, id)
 wp10 = Locationwp().Set(38.3143944, -76.5439477, 26, id)
 
 print ("set wp total")
-MAV.setWPTotal(5)
+MAV.setWPTotal(12)
 print ("upload to")
 MAV.setWP(to,0,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload wp1")
