@@ -67,6 +67,3 @@ print ("final ack")
 MAV.setWPACK();
 
 print ("done")
-
-
-
