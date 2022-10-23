@@ -9,6 +9,8 @@ alt = [];
 
 #get number of waypoints
 n = int(input("Enter number of waypoints: "))
+#create empty list of n waypoints
+wp = [] * n;
 
 #iterate till all latitudes, longitudes, and altitudes are in their respective arrays
 for i in range(0, n):
@@ -21,6 +23,11 @@ for i in range(0, n):
     lat.append(latIn)
     long.append(longIn)
     alt.append(altIn)
+
+#for i in range (0, n):
+#   print("Latitude", i, ":", lat[i])
+#    print("Longitude", i, ":", long[i])
+#    print("Altitude:", i, ":", alt[i])
 
 for i in range (0, n):
     print("Latitude", i, ":", lat[i])
