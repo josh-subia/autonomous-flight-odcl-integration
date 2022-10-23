@@ -36,6 +36,7 @@ wp8 = Locationwp().Set(38.3145479, -76.5451912, 26, id)
 wp9 = Locationwp().Set(38.3145917, -76.5451776, 26, id)
 wp10 = Locationwp().Set(38.3143944, -76.5439477, 26, id)
 
+#waypoint total is 12 because there is the "upload to", 10 search waypoints, and RTL waypoint
 print ("set wp total")
 MAV.setWPTotal(12)
 print ("upload to")
