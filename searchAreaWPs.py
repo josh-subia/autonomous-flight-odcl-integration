@@ -61,8 +61,10 @@ print ("upload wp9")
 MAV.setWP(wp9,9,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload wp10")
 MAV.setWP(wp10,10,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
-print ("upload home - reset on arm")
-MAV.setWP(home,11,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+
+#Commented out set WP to home because air delivery still needs to be coded
+#print ("upload home - reset on arm")
+#MAV.setWP(home,11,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("final ack")
 MAV.setWPACK();
 
