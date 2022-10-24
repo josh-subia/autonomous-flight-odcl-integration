@@ -23,15 +23,20 @@ for i in range(0, n):
     alt.append(altIn)
 
 #convert to feet from meters
-print(inMeters)
 if inMeters == 0:
-    print("Altitude is in feet ")
+    print("Altitude is in feet, converting...")
     for i in range(0, n):
         alt[i] = alt[i] * 0.3048
 
 
 
-for i in range (0, n):
-    print("Latitude", i, ":", lat[i])
-    print("Longitude", i, ":", long[i])
-    print("Altitude:", i, ":", alt[i])
+#for i in range (0, n):
+#    print("Latitude", i, ":", lat[i])
+#    print("Longitude", i, ":", long[i])
+#    print("Altitude:", i, ":", alt[i])
+
+with open('waypoints.csv', 'w') as csv_file:
+    csv_writer = csv.writer(csv_file, delimiter=',')
+    csv_writer.writerow(lat)
+    csv_writer.writerow(long)
+    csv_writer.writerow(alt)
