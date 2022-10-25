@@ -56,7 +56,7 @@ Locationwp.p1.SetValue(to, 15)
 Locationwp.alt.SetValue(to, 50)
 
 print ("set wp total")
-#Total WP is n+1 to accound for Home
+#Total WP is n+1 to account for Home
 MAV.setWPTotal(n+1)
 print ("upload to")
 MAV.setWP(to,0,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
