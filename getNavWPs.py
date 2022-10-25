@@ -11,13 +11,13 @@ alt = [];
 n = 0;
 with open('navWPs.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
-    for col in csv_reader:
-        lat.append(col[0])
-        long.append(col[1])
-        alt.append(col[2])
-        n += 1
+    for row in csv_reader:
+        #lat.append(col[0])
+        #long.append(col[1])
+        #alt.append(col[2])
+        print(', '.join(row))
 
-for i in range(0, n)
-    print("Latitude", i, ":", lat[i])
-    print("Longitude", i, ":", long[i])
-    print("Altitude (in meters):", i, ":", alt[i])
+#for i in range(0, n):
+#    print("Latitude", i, ":", lat[i])
+#    print("Longitude", i, ":", long[i])
+#    print("Altitude (in meters):", i, ":", alt[i])
