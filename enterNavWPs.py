@@ -29,7 +29,7 @@ if inMeters == 0:
         alt[i] = alt[i] * 0.3048
 
 
-with open('navWPs.csv', 'w') as csv_file:
+with open('navWPs.csv', 'w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file, delimiter=',')
     csv_writer.writerow(lat)
     csv_writer.writerow(long)
