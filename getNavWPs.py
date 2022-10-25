@@ -2,23 +2,25 @@
 import csv
 
 #create empty latitude list
-lat = [];
+lat = []
 #create empty longitude list
-long = [];
+long = []
 #create empty altitude list
-alt = [];
-#number of waypoints
-n = 0;
+alt = []
+#create empty rows list
+rows = []
+
+#store data in a 2d array called rows
 with open('navWPs.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
-        lat.append(row)
-        #long.append(col[1])
-        #alt.append(col[2])
-        n += 1
-        #print(', '.join(row))
+        rows.append(row)
 
-for i in range(0, n):
-    print("Latitude", i, ":", lat[i])
-#    print("Longitude", i, ":", long[i])
-#    print("Altitude (in meters):", i, ":", alt[i])
+#store latitude, longitude, and altitude in an array
+for i in range(0, len(rows[0])):
+    lat.append(rows[0][i])
+    long.append(rows[1][i])
+    alt.append(rows[2][i])
+    #print("Latitude", i, ":", lat[i])
+    #print("Longitude", i, ":", long[i])
+    #print("Altitude", i, "(in meters):", alt[i])
