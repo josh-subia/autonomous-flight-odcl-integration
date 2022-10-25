@@ -1,5 +1,6 @@
 #This file is able to get waypoint data through user input and saves it in a waypoints.csv file
 #Work that still has to be done is to officially upload these waypoint data to Mission Planner
+import csv
 #create empty latitude list
 lat = [];
 #create empty longitude list
@@ -24,12 +25,11 @@ for i in range(0, n):
 
 #convert to feet from meters
 if inMeters == 0:
-    print("Altitude is in feet, converting...")
     for i in range(0, n):
         alt[i] = alt[i] * 0.3048
 
 
-with open('waypoints.csv', 'w') as csv_file:
+with open('navWaypoints.csv', 'w') as csv_file:
     csv_writer = csv.writer(csv_file, delimiter=',')
     csv_writer.writerow(lat)
     csv_writer.writerow(long)
