@@ -39,7 +39,6 @@ for i in range(0, n):
     alt.append(altIn)
 
 for i in range (0, n):
-    #waypoints to search the air delivery area
     wp[i] = Locationwp().Set(lat[i], long[i], alt[i], id) 
     print("Latitude", i, ":", lat[i])
     print("Longitude", i, ":", long[i])
