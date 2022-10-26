@@ -12,7 +12,8 @@ alt = [];
 n = int(input("Enter number of waypoints: "))
 inMeters = int(input("Is altitude in meters or feet(if meters, enter '1', else enter '0')? "))
 #iterate till all latitudes, longitudes, and altitudes are in their respective arrays
-for i in range(0, n):
+i = 0
+while i < n:
     #Get latitude,longitude and altitude
     print("Enter waypoint", i, "data")
     latIn = float(input("Enter latitude: "))
@@ -22,6 +23,24 @@ for i in range(0, n):
     lat.append(latIn)
     long.append(longIn)
     alt.append(altIn)
+    i += 1
+    if(i == n):
+        print("Is this data correct?")
+        for i in range(0, n):
+            print("Latitude", i, ":", lat[i])
+            print("Longitude", i, ":", long[i])
+            print("Altitude", i, ":", alt[i])
+        correct = int(input("If this data is corrent, enter '1', else enter '0': "))
+        #restart the loop if data is incorrect
+        if(correct == 0):
+            #get # of waypoints again
+            n = int(input("Enter number of waypoints: "))
+            lat = []
+            long = []
+            alt = []
+            i = 0
+        else:
+            break
 
 #convert to feet from meters
 if inMeters == 0:
