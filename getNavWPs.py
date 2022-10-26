@@ -54,14 +54,14 @@ def getNavWPs():
 
     print ("set wp total")
     #Total WP is len(rows[0]) + 1 to account for Home
-    MAV.setWPTotal(len(rows[0]) + 1
+    MAV.setWPTotal(len(rows[0]) + 1)
     print ("upload to")
     MAV.setWP(to,0,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);)
 
     #for loop to upload waypoints
-    for i in range (1, n):
+    for i in range (1, n+1):
         print ("upload wp", i)
-        MAV.setWP(wp[i], i, MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+        MAV.setWP(wp[i-1], i, MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 
     print ("final ack")
     MAV.setWPACK();
