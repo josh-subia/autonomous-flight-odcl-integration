@@ -59,7 +59,7 @@ def getNavWPs():
     MAV.setWP(to,0,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);)
 
     #for loop to upload waypoints
-    for i in range (1, n+1):
+    for i in range (1, len(rows[0]) + 1):
         print ("upload wp", i)
         MAV.setWP(wp[i-1], i, MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 
