@@ -32,8 +32,15 @@ getNavWPs()
 #Navigate the search area
 
 
-#If less than 5 identified targets, navigate the search area again
+#Get target locations from ODCL script
+target_lat = []
+target_long = []
+target_id = []
 
+#If less than 5 identified targets, navigate the search area again
+if(len(target_lat) < 5):
+    #navigate the search area again
+    
 
 #Payload delivery
 
