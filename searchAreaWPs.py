@@ -15,6 +15,12 @@ from MissionPlanner.Utilities import Locationwp
 clr.AddReference("MAVLink") # includes the Utilities class
 import MAVLink
 
+
+#create everything from the bottom  of the code into a function
+#notes code from mission planner 
+
+
+
 idmavcmd = MAVLink.MAV_CMD.WAYPOINT
 id = int(idmavcmd)
 
