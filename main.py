@@ -18,6 +18,10 @@ import MAVLink
 
 #import python files
 from getNavWPs import *
+from enterNavWPs import *
+from searchAreaWPs import *
+
+
 
 #Undecided if to be implemented yet: 
 # Get waypoint navigation waypoints through user input and navigate them
