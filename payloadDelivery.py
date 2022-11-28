@@ -16,8 +16,8 @@ import MAVLink
 idmavcmd = MAVLink.MAV_CMD.WAYPOINT
 id = int(idmavcmd)
 
-target_lat = []
-target_long = []
+target_lat = [38.3143699 38.3143152 38.3143152 38.3143742 38.3144794]
+target_long = [-76.5450177 -76.5447387 -76.5443256 -76.5441540 -76.5447119]
 target_id = []
 #altitude is 26 meters, approximately 85 feet high
 alt = 26
