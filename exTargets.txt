@@ -1,0 +1,5 @@
+Target 1: Lat: 38.3143699; Long: -76.5450177
+Target 2: Lat: 38.3143152; Long: -76.5447387
+Target 3: Lat: 38.3143152; Long: -76.5443256
+Target 4: Lat: 38.3143742; Long: -76.5441540
+Target 5: Lat: 38.3144794; Long: -76.5447119
