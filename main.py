@@ -96,25 +96,25 @@ wp9 = Locationwp().Set(38.3145917, -76.5451776, 26, id)
 wp10 = Locationwp().Set(38.3143944, -76.5439477, 26, id)
 #Upload search area waypoints
 print ("upload search area wp1")
-MAV.setWP(wp1,1,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp1, len(rows[0])+1,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload search area wp2")
-MAV.setWP(wp2,2,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp2, len(rows[0])+2,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload search area wp3")
-MAV.setWP(wp3,3,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp3, len(rows[0])+3,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload search area wp4")
-MAV.setWP(wp4,4,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp4, len(rows[0])+4,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload search area wp5")
-MAV.setWP(wp5,5,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp5, len(rows[0])+5,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload search area wp6")
-MAV.setWP(wp6,6,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp6, len(rows[0])+6,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload search area wp7")
-MAV.setWP(wp7,7,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp7, len(rows[0])+7,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload search area wp8")
-MAV.setWP(wp8,8,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp8, len(rows[0])+8,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload search area wp9")
-MAV.setWP(wp9,9,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp9, len(rows[0])+9,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("upload search area wp10")
-MAV.setWP(wp10,10,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
+MAV.setWP(wp10, len(rows[0])+10,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 
 #Get target locations from ODCL script
 target_lat = []
