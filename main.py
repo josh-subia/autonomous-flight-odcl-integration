@@ -120,10 +120,6 @@ MAV.setWP(wp10, len(rows[0])+10,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 target_lat = []
 target_long = []
 target_id = []
-
-#If less than 5 identified targets, navigate the search area again
-#if(len(target_lat) < 5):
-    #navigate the search area again
     
 
 #Payload delivery
