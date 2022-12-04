@@ -23,7 +23,7 @@ home = Locationwp().Set(38.315339, -76.548108, 0, id)
 to = Locationwp()
 Locationwp.id.SetValue(to, int(MAVLink.MAV_CMD.TAKEOFF))
 Locationwp.p1.SetValue(to, 15)
-Locationwp.alt.SetValue(to, 50)
+Locationwp.alt.SetValue(to, 26)
 #waypoints to search the air delivery area
 wp1 = Locationwp().Set(38.3144603, -76.5452184, 26, id)
 wp2 = Locationwp().Set(38.3142627, -76.5439865, 26, id)
@@ -67,5 +67,4 @@ MAV.setWP(wp10,10,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 #MAV.setWP(home,11,MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT);
 print ("final ack")
 MAV.setWPACK();
-
 print ("done")
