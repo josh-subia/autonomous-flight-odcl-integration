@@ -47,7 +47,7 @@ if inMeters == 0:
         alt[i] = alt[i] * 0.30483
 
 #print waypoints to the waypoint file
-f = open("navSearchWPs.waypoints", "w")
+f = open("./test_files/navSearchWPs.waypoints", "w")
 f.write("QGC WPL 110\n")
 #Write the takeoff command
 f.write("0 1 0 16 0 0 0 0 38.315339 -76.548108 0.000000 1\n")

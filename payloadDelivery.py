@@ -17,7 +17,7 @@ servo_port5 = 7
 servo_PWM = 1500
 
 #write waypoints and do_set_servo commands to waypoint file
-f = open("payloadDelivery.waypoints", "w")
+f = open("./test_files/payloadDelivery.waypoints", "w")
 f.write(F"1 0	3	16	0.00000000	0.00000000	0.00000000	0.00000000	{lat[0]}	{long[0]}	[{alt}]	1\n")
 f.write(F"2 0   3   183 {servo_port1}     {servo_PWM}  0.00000000  0.00000000  0.00000  0.00000 0.000000 1")
 f.write(F"3 0	3	16	0.00000000	0.00000000	0.00000000	0.00000000	{lat[1]}	{long[1]}	[{alt}]	1\n")
