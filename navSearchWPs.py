@@ -40,7 +40,7 @@ while i < n:
         else:
             break
 
-trig_dist = float(input("Enter camera trigger distance"))
+trig_dist = float(input("Enter camera trigger distance: "))
 #convert to feet from meters
 if inMeters == 0:
     for i in range(0, n):
