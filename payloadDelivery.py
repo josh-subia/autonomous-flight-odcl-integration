@@ -1,4 +1,5 @@
 ##This file is able to get target data from the ODCL script and deliver payloads
+#Make sure that the UAS loiters for 20 seconds after D_SET_SERVO to give time for payload delivery
 
 #Currently these are example target locations
 #create empty latitude list
