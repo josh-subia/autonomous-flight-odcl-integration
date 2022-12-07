@@ -1,4 +1,6 @@
 #This file is able to get waypoint data through user input and saves it in a navWPs.waypoints file
+#Changes that could be implemented:
+#Uploading the command DO_CHANGE_SPEED to make sure that the hexacopter flies at the max speed for waypoint navigation
 #create empty latitude list
 lat = [];
 #create empty longitude list
